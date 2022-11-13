@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>miniCRUD</title>
+</head>
+    <body>
+        <h1 id="titulo">Administrador de Personajes</h1>
+        <div id=vistaInicio>
+            <div id="alta">
+                <h2>Alta personaje</h2>
+                <div>
+                    <label>Nombre del Personaje
+                        <input type="text" id="nombre" name="nombre" />
+                    </label>
+                    <label>Descripción
+                        <input type="text" id="descripcion" name="descripcion" />
+                    </label>
+                    <label>Fecha de aparición 
+                        <input type="date" id="fecha" name="fecha" />
+                    </label><br/>
+                    <label>Tipo
+                        <select>
+                            <option value="Divino">Divino</option>
+                            <option value="Humano">Humano</option>
+                            <option value="Animal">Animal</option>
+                            <option value="Vegetal">Vegetal</option>
+                            <option value="Mineral">Mineral</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </label>
+                    <label> Url
+                        <input type="url" name="url" />
+                    </label>
+                    <label> Foto o dibujo
+                        <input type="file" name="file" />
+                    </label><br/>
+                    <button>Aceptar</button>
+                </div>
+            </div>
+            <div id="buscar">
+                <label >Buscar
+                 <input type="text">
+                </label>
+                <button>Buscar</button>
+             </div>
+         
+            <table>
+                <thead>
+                    <tr id="titulotabla"><th colspan="3" >Lista de Personajes</th></tr>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Foto</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>   
+         </div>
+         <div id="vistaConsulta">
+         </div>
+         <div id="vistaModificar">
+            <h2>Modificar Personaje</h2>
+            <label>Nombre del Personaje
+                <input type="text" id="nombre" name="nombre" />
+            </label>
+            <label>Descripción
+                <input type="text" id="descripcion" name="descripcion" />
+            </label>
+            <label>Fecha de aparición 
+                <input type="date" id="fecha" name="fecha" />
+            </label><br/>
+            <label>Tipo
+                <select>
+                    <option value="Divino">Divino</option>
+                    <option value="Humano">Humano</option>
+                    <option value="Animal">Animal</option>
+                    <option value="Vegetal">Vegetal</option>
+                    <option value="Mineral">Mineral</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </label>
+            <label> Url
+                <input type="url" name="url" />
+            </label><br/>
+            <label> Foto o dibujo
+                <input type="file" name="file" />
+            </label><br/>
+            <button>Aceptar</button>
+            <button>Cancelar</button>
+        </div>
+        <script type = module src="app.js"></script>
+    </body>
+</html>
